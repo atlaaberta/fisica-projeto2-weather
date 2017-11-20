@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="C:/Users/savio/.gradle/caches/modules-2/files-2.1/com.microsoft.azure/applicationinsights-core/1.0.8/caeb2407dc7d9ce7555064f303b2fb7bb62ac1f6/applicationinsights-core-1.0.8.jar" sourcepath="C:/Users/savio/.gradle/caches/modules-2/files-2.1/com.microsoft.azure/applicationinsights-core/1.0.8/fd6a239bfae19e2451b7b17b4a7dede3cf5f73da/applicationinsights-core-1.0.8-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/savio/git/RESTclient/jersey-bundle-1.19.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/savio/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.5.2/733db77aa8d9b2d68015189df76ab06304406e50/httpclient-4.5.2.jar" sourcepath="C:/Users/savio/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.5.2/b9f9e3e5255b6ddc3bf21be05428c7a60d00e042/httpclient-4.5.2-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/savio/git/RESTclient/sqlite-jdbc-3.19.3.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
