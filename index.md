@@ -53,5 +53,6 @@ function drawChart() {
     </head>
     <body>
         <div id="chart_div" style="width: 400px; height: 120px;"></div>
+        #Teste
     </body>
 </html>
