@@ -2,3 +2,5 @@ theme: jekyll-theme-architect
 name: Central de Monitoramento de Ambiente
 title: Central de Monitoramento de Ambiente
 tagline: Uma estação prática para monitoramento de variáveis de ambiente
+
+markdown: kramdown
