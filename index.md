@@ -1,9 +1,6 @@
-<!doctype html>
-<html>
-    <head>
-        <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
-        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-        <script type="text/javascript">
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
 // set your channel's read api key here if necessary
 var api_key = '39YJM4SS4Q8ZCZT0';
 // set your channel id here
@@ -49,10 +46,5 @@ function drawChart() {
         }, 100);
     })
 }
-        </script>
-    </head>
-    <body>
-        <div id="chart_div" style="width: 400px; height: 120px;"></div>
-        #Teste
-    </body>
-</html>
+</script>
+#Teste
