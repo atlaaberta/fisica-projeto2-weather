@@ -51,7 +51,7 @@ function drawChart() {
 </script>
 </head>
 <body>
-#Teste
+# Teste
 
 <div id='chart_div'></div>
 </body>
