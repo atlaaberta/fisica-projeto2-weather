@@ -1,58 +1,25 @@
-<html>
-    <head>
-<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-<script type="text/javascript">
-// set your channel's read api key here if necessary
-var api_key = '39YJM4SS4Q8ZCZT0';
-// set your channel id here
-var channel_id = 369399;
-// global variables
-var data;
+# Materiais
 
-google.charts.load('current', {'packages':['gauge']});
-google.charts.setOnLoadCallback(drawChart);
+### Software
+Descrição | Versão
+------------ | -------------
+[Arduino IDE](https://www.arduino.cc/)  |   1.8.5
+[Thinkspeak](https://thingspeak.com/)   |   -
+[Ionic](https://ionicframework.com/)    |   2 
 
-function drawChart() {
-    $.getJSON('https://api.thingspeak.com/channels/'+channel_id+'/feed/last.json?api_key='+api_key, function(data) {
-        data = google.visualization.arrayToDataTable([
-            ['Label', 'Value'],
-            ['Field1', parseFloat(data.field1)],
-            ['Field2', parseFloat(data.field2)],
-            ['Field3', parseFloat(data.field3)],
-            ['Field4', parseFloat(data.field3)],
-            ['Field5', parseFloat(data.field3)]
-        ]);
+#### Bibliotecas
 
-        var options = {
-            width: 400, height: 120,
-            redFrom: 90, redTo: 100,
-            yellowFrom:75, yellowTo: 90,
-            minorTicks: 5
-        };
 
-        var chart = new google.visualization.Gauge(document.getElementById('chart_div'));
+### Hardware
 
-        chart.draw(data, options);
+Qtd | Descrição
+------------ | -------------
+1   |   [Arduino UNO](https://www.arduino.cc/)
+1   |   [Protoboard](https://www.google.com.br/)
+1   |   [Sensor de temperatura e umidade DHT22](https://www.sparkfun.com/datasheets/Sensors/Temperature/DHT22.pdf)
+1   |   [Sensor de umidade do Solo](http://www.google.com.br/)
+1   |   [Sensor de luminosidade](http://www.google.com.br/)
 
-        setInterval(function() {
-            $.getJSON('https://api.thingspeak.com/channels/'+channel_id+'/feed/last.json?api_key='+api_key, function(json) {
-                console.log(json)
-                data.setValue(0, 1, parseFloat(json.field1));
-                data.setValue(1, 1, parseFloat(json.field2));
-                data.setValue(2, 1, parseFloat(json.field3));
-                data.setValue(3, 1, parseFloat(json.field3));
-                data.setValue(4, 1, parseFloat(json.field3));
-                chart.draw(data, options);
-            })
-        }, 100);
-    })
-}
-</script>
-</head>
-<body>
-# Teste
+> Mais sensores podem ser adicionados e monitorados através da configuração do arduino e da adição de novos campos na API do Thinkspeak
 
-<div id='chart_div'></div>
-</body>
-</html>
+
