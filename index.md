@@ -1,3 +1,5 @@
+<html>
+    <head>
 <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <script type="text/javascript">
@@ -47,4 +49,10 @@ function drawChart() {
     })
 }
 </script>
+</head>
+<body>
 #Teste
+
+<div id='chart_div'></div>
+</body>
+</html>
