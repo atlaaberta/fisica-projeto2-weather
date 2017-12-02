@@ -10,6 +10,14 @@ Descrição | Versão
 
 #### Bibliotecas
 
+Antes de relizar a instalação das bibliotecas é necessário adicionar um novo repositório de busca na IDE do Arduino. Isso pode ser feito adicionando o endereço `http://arduino.esp8266.com/stable/package_esp8266com_index.json` ao campo **URLs adicionais para Gerenciadores de Placas**. Dessa forma, o gerenciador de biblioteca da IDE do Arduino é capaz de localizar e instalar todas as bibliotecas necessárias para o projeto.
+
+Para que o pograma seja compilado e gravado no ESP de maneira correta é necessária realizar a instalão das bibliotecas:
+
+Descrição | Versão
+------------ | -------------
+ESP8266*  |   1.0.0
+DHT Sensor Library | 1.3.0
 
 ### Hardware
 
