@@ -35,6 +35,6 @@ Qtd | Descrição | Preço Médio
 
 A imagem abaixo mostra o esquema de montagem utilizado no projeto.
 
-![Esquema de montagem](https://imgur.com/a/YpDsk)
+![Esquema de montagem](documentacao/res/montagem_fritz_bb.png)
 
 
