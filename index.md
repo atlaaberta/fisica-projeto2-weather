@@ -26,7 +26,7 @@ Qtd | Descrição | Preço Médio
 1   |   [ESP8266 nodemcu](https://www.filipeflop.com/blog/esp8266-nodemcu-como-programar/)  | R$ 28,00
 1   |   Protoboard | R$ 4,00
 1   |   [Sensor de temperatura e umidade DHT11](https://akizukidenshi.com/download/ds/aosong/DHT11.pdf) | R$ 7,00
-1   |   Sensor de umidade do Solo YL-69 | R$ 8,00
+1   |   Sensor de umidade do Solo YL-69 + YL-38| R$ 8,00
 1   |   Sensor de luminosidade LDR | R$ 4,00 (10un)
 
 > Mais sensores podem ser adicionados e monitorados através da configuração do ESP e da adição de novos campos na API do [*Thinkspeak*](https://thingspeak.com).
@@ -35,5 +35,6 @@ Qtd | Descrição | Preço Médio
 
 A imagem abaixo mostra o esquema de montagem utilizado no projeto.
 
+![Esquema de montagem](https://imgur.com/9pWu8nA)
 
 
