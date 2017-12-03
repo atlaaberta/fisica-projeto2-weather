@@ -59,6 +59,13 @@ A imagem abaixo mostra o esquema de montagem utilizado no projeto.
 
 ![Esquema de montagem](documentacao/res/montagem_fritz_bb.png)
 
+## Passos para Execução
+
+Uma vez instalado o programa, juntamente com as depencias de bibliotecas, basta clicar em **Comilar e executar**
+
+## Passos para Adição de outros sensores
+
+
 ## Problemas e Soluções
 
 #### Problemas com protocolo HTTPS?
