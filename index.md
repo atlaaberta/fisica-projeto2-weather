@@ -19,6 +19,16 @@ Descrição | Versão
 ESP8266*  |   1.0.0
 DHT Sensor Library | 1.3.0
 
+#### Preparação da API Thinkspeak
+
+Para o armazenamento e comunicação com os dispositivos, foi utilizado o serviço ***ThinkSpeak***, uma plataforma aberta para IoT, que permite a criação de API para comunicação entre dispositivos através da nuvem. Para fazer uso da plataforma ***ThinkSpeak*** é necessário registrar-se no [link](https://thingspeak.com).
+
+Após realizado o cadastro no ***ThinkSpeak*** são necessários os seguintes passos para criação de uma API para sua aplicação:
+
+1. Crie uma nova aplicação do tipo **ThingHTTP** nesse [link](https://thingspeak.com/apps), para criação de POST ou GET personalizados para o seu webservice.
+2. Crie um novo canal nesse [link](https://thingspeak.com/channels), para configurar e habilitar os campos existentes nas suas requisições.
+3. Teste as requisições de acordo com o formato indicado após a criação do canal.
+
 ### Hardware
 
 Qtd | Descrição | Preço Médio
@@ -28,6 +38,8 @@ Qtd | Descrição | Preço Médio
 1   |   [Sensor de temperatura e umidade DHT11](https://akizukidenshi.com/download/ds/aosong/DHT11.pdf) | R$ 7,00
 1   |   Sensor de umidade do Solo YL-69 + YL-38| R$ 8,00
 1   |   Sensor de luminosidade LDR | R$ 4,00 (10un)
+1   |   Resistor de 10k ohms       | R$ 0,50
+2   |   Diodos (?)                 | R$ 0,70
 
 > Mais sensores podem ser adicionados e monitorados através da configuração do ESP e da adição de novos campos na API do [*Thinkspeak*](https://thingspeak.com).
 
