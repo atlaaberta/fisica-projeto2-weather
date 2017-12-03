@@ -61,7 +61,7 @@ A imagem abaixo mostra o esquema de montagem utilizado no projeto.
 
 ## Passos para Execução
 
-Uma vez instalado o programa, juntamente com as depencias de bibliotecas, basta clicar em **Comilar e executar**
+Uma vez instalado o programa, juntamente com as depencias de bibliotecas, basta clicar em **Comilar e executar** para que o código seja compilado e inserido no **NodeMCU**.
 
 ## Passos para Adição de outros sensores
 
