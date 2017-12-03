@@ -90,5 +90,9 @@ String url = "/update";
 
 #### Problemas com protocolo HTTPS?
 
+Como o serviço do ThinkSpeak funciona sobre o protocolo HTTPS é necessário que o ESP também tenha suporte para HTTPS. Dessa forma foi necessária a utilização da biblioteca **<WiFiClientSecure.h>**.
+
 #### Problemas com precisão dos sensores?
+
+Os sensores utilizados não são de alta precisão mas, para efeitos de prototipação, mostraram-se suficientemente bons e com uma variação de 20% com relação as medições feitas por estações profissionais.
 
