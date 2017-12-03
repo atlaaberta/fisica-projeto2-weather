@@ -65,6 +65,9 @@ Uma vez instalado o programa, juntamente com as depencias de bibliotecas, basta 
 
 ## Passos para Adição de outros sensores
 
+### Modificações no ThinkSpeak
+
+### Modificações no código do ESP
 
 ## Problemas e Soluções
 
