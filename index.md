@@ -72,7 +72,7 @@ Nesse momento basta apenas habilitar e nomear um dos 8 campos possíveis forneci
 
 ### Modificações no código do ESP
 
-No código do ESP também não são necessárias grandes modificações. Após feita a ativação e leitura do novo sensor, basta apenas que valor lido seja adicionado a URL de update da API justatamente com o nome do respectivo campo.
+No código do ESP também não são necessárias grandes modificações. Após feita a ativação e leitura do novo sensor, basta apenas que valor lido seja adicionado a URL de update da API justatamente com o nome do respectivo campo. Como no código abaixo.
 
 ```
 String url = "/update";
