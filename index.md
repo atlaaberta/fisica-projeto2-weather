@@ -1,3 +1,13 @@
+## Objetivo
+
+O objetivo desse trabalho é apresentar um sistema de monitoramento de variáveis de ambiente utilizando dipositivos e plataformas com suporte a IoT.
+
+### Motivação
+
+O monitoramento de variáveis de ambiente é algo presente em diversas áreas, desde ao monitoramento para automação até a um controle mais preciso prar fins de pesquisa científica.
+
+Com a disseminação do IoT agora é possivel que exista um monitoramento e tomada de decisões em um tempo bem menor ou até mesmo em tempo real. 
+
 ## Materiais
 
 ### Software
