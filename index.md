@@ -12,7 +12,7 @@ Descrição | Versão
 
 Antes de realizar a instalação das bibliotecas é necessário adicionar um novo repositório de busca na IDE do Arduino. Isso pode ser feito adicionando o endereço `http://arduino.esp8266.com/stable/package_esp8266com_index.json` ao campo **URLs adicionais para Gerenciadores de Placas** localizado em **Arquivo > Preferências**. Dessa forma, o gerenciador de biblioteca da IDE do Arduino é capaz de localizar e instalar todas as bibliotecas necessárias para o projeto.
 
-Para que o programa seja compilado e gravado no ESP de maneira correta é necessário realizar a instalção das seguintes bibliotecas:
+Para que o programa seja compilado e gravado no ESP de maneira correta é necessário realizar a instalação das seguintes bibliotecas:
 
 Descrição | Versão
 ------------ | -------------
@@ -29,7 +29,7 @@ Qtd | Descrição | Preço Médio
 1   |   Sensor de umidade do Solo YL-69 | R$ 8,00
 1   |   Sensor de luminosidade LDR | R$ 4,00 (10un)
 
-> Mais sensores podem ser adicionados e monitorados através da configuração do arduino e da adição de novos campos na API do Thinkspeak
+> Mais sensores podem ser adicionados e monitorados através da configuração do ESP e da adição de novos campos na API do [*Thinkspeak*](https://thingspeak.com).
 
 #### Esquema de montagem
 
