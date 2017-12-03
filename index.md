@@ -49,4 +49,9 @@ A imagem abaixo mostra o esquema de montagem utilizado no projeto.
 
 ![Esquema de montagem](documentacao/res/montagem_fritz_bb.png)
 
+## Problemas e Soluções
+
+#### Problemas com protocolo HTTPS?
+
+#### Problemas com precisão dos sensores?
 
