@@ -35,9 +35,8 @@ Para o armazenamento e comunicação com os dispositivos, foi utilizado o servi�
 
 Após realizado o cadastro no ***ThinkSpeak*** são necessários os seguintes passos para criação de uma API para sua aplicação:
 
-1. Crie uma nova aplicação do tipo **ThingHTTP** nesse [link](https://thingspeak.com/apps), para criação de POST ou GET personalizados para o seu webservice.
-2. Crie um novo canal nesse [link](https://thingspeak.com/channels), para configurar e habilitar os campos existentes nas suas requisições.
-3. Teste as requisições de acordo com o formato indicado após a criação do canal.
+1. Crie um novo canal nesse [link](https://thingspeak.com/channels), para configurar e habilitar os campos existentes nas suas requisições.
+2. Teste as requisições de acordo com o formato indicado após a criação do canal.
 
 ### Hardware
 
@@ -61,13 +60,31 @@ A imagem abaixo mostra o esquema de montagem utilizado no projeto.
 
 ## Passos para Execução
 
-Uma vez instalado o programa, juntamente com as depencias de bibliotecas, basta clicar em **Comilar e executar** para que o código seja compilado e inserido no **NodeMCU**.
+Uma vez instalado o programa, juntamente com as depencias de bibliotecas, basta clicar em **Compilar e executar** para que o código seja compilado e inserido no **NodeMCU**.
 
 ## Passos para Adição de outros sensores
 
 ### Modificações no ThinkSpeak
 
+Para adicionar um novo campo na API do ThinkSpeak basta acessar a url `https://thingspeak.com/channels/<id_canal>/edit` onde **<id_canal>** é o id do canal gerado na criação do  canal.
+
+Nesse momento basta apenas habilitar e nomear um dos 8 campos possíveis fornecidos pela API do ThinkSpeak.
+
 ### Modificações no código do ESP
+
+No código do ESP também não são necessárias grandes modificações. Após feita a ativação e leitura do novo sensor, basta apenas que valor lido seja adicionado a URL de update da API justatamente com o nome do respectivo campo.
+
+```
+String url = "/update";
+  url += "?api_key=";
+  url += apiKey;
+  url +="&field1=";
+  url += String(t);
+  url +="&field2=";
+  url += String(h);
+  url +="&field3=";
+  url += String(dp);
+```
 
 ## Problemas e Soluções
 
