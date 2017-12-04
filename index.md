@@ -102,7 +102,7 @@ String url = "/update";
 
 ## Exemplo em funcionamento
 
-{% include gauges.html %}
+
 
 ## Problemas e Soluções
 
