@@ -15,11 +15,11 @@ function drawChart() {
     $.getJSON('https://api.thingspeak.com/channels/'+channel_id+'/feed/last.json?api_key='+api_key, function(data) {
         data = google.visualization.arrayToDataTable([
             ['Label', 'Value'],
-            ['Field1', parseFloat(data.field1)],
-            ['Field2', parseFloat(data.field2)],
-            ['Field3', parseFloat(data.field3)],
-            ['Field4', parseFloat(data.field3)],
-            ['Field5', parseFloat(data.field3)]
+            ['Temperatura', parseFloat(data.field1)],
+            ['Umidade do Ar', parseFloat(data.field2)],
+            ['Ponto Orvalho', parseFloat(data.field3)],
+            ['Luminosidade', parseFloat(data.field5)],
+            ['Umidade Solo', parseFloat(data.field6)]
         ]);
 
         var options = {
@@ -39,11 +39,11 @@ function drawChart() {
                 data.setValue(0, 1, parseFloat(json.field1));
                 data.setValue(1, 1, parseFloat(json.field2));
                 data.setValue(2, 1, parseFloat(json.field3));
-                data.setValue(3, 1, parseFloat(json.field3));
-                data.setValue(4, 1, parseFloat(json.field3));
+                data.setValue(3, 1, parseFloat(json.field5));
+                data.setValue(4, 1, parseFloat(json.field6));
                 chart.draw(data, options);
             })
-        }, 100);
+        }, 15000);
     })
 }
 </script>
