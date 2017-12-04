@@ -100,6 +100,10 @@ String url = "/update";
   url += String(dp);
 ```
 
+## Exemplo em funcionamento
+
+{% include gauges.html %}
+
 ## Problemas e Soluções
 
 #### Problemas com protocolo HTTPS?
