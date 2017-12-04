@@ -101,7 +101,7 @@ String url = "/update";
 ```
 
 ## Exemplo em funcionamento
-{% include_relative ./gauges.html %}
+{% include gauges.html %}
 
 
 ## Problemas e Soluções
