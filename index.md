@@ -38,6 +38,21 @@ Após realizado o cadastro no ***ThinkSpeak*** são necessários os seguintes pa
 1. Crie um novo canal nesse [link](https://thingspeak.com/channels), para configurar e habilitar os campos existentes nas suas requisições.
 2. Teste as requisições de acordo com o formato indicado após a criação do canal.
 
+Após a criação do canal, são geradas duas chaves: (i) uma chave para escrita, que é usada para escrever os dados e realizar updates; (ii) uma chave de leitura, que é utilizada nas consultas.
+
+A própria API do ThinkSpeak fornece as URLs de exemplo utilizando as chaves de escrita e leitura, um exemplo dessas URL pode ser visto abaixo:
+
+```
+// Atualiza o valor de um campo
+GET https://api.thingspeak.com/update?api_key=I4CNQBYEG6HGFMEV&field1=0
+// Retorna o resultado de um canal inteiro
+GET https://api.thingspeak.com/channels/369399/feeds.json?api_key=39YJM4SS4Q8ZCZT0&results=2
+// Retorna o resultado de um campo em especifico
+GET https://api.thingspeak.com/channels/369399/fields/1.json?api_key=39YJM4SS4Q8ZCZT0&results=2
+// Retorna as informaçoes sobre o estado de um canal
+GET https://api.thingspeak.com/channels/369399/status.json?api_key=39YJM4SS4Q8ZCZT0
+```
+
 ### Hardware
 
 Qtd | Descrição | Preço Médio
