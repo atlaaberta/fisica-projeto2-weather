@@ -11,52 +11,73 @@
     var app = angular
     .module('gauges', ['angularjs-gauge'])
 
-app.controller('MainController', function($scope, $http, $interval) {
-    var values = this;
+    app.controller('MainController', function($scope, $http, $interval) {
+        var values = this;
+        var url = 'https://api.thingspeak.com/channels/'+channel_id+'/feed/last.json?api_key='+api_key
 
-    var url = 'https://api.thingspeak.com/channels/'+channel_id+'/feed/last.json?api_key='+api_key
+        values.tempThresholds = {
+            '0': { color: 'blue' },
+            '20': { color: 'green' },
+            '30': { color: 'orange' },
+            '35': { color: 'red' }
+        }
 
-    values.temperatura = 0
-    values.umidade_ar = 0
-    values.ponto_orvalho = 0
-    values.luminosidade = 0
-    values.umidade_solo = 0
+        values.umiThresholds = {
+            '0': { color: 'red' },
+            '30': { color: 'orange' },
+            '50': { color: 'green' },
+            '70': { color: 'blue' }
+        }
 
-    $interval(function() {
-        $http.get(url)
-            .then(function(res) {
-                values.temperatura = res.data.field1
-                values.umidade_ar = res.data.field2
-                values.ponto_orvalho = res.data.field3
-                values.luminosidade = res.data.field5
-                values.umidade_solo = res.data.field6
-            })
-    }, 5000)
-})
+        values.lumiThresholds = {
+            '0': { color: 'black' },
+            '200': { color: 'SaddleBrown' },
+            '300': { color: 'yellow' },
+            '500': { color: 'LightGoldenRodYellow' },
+            '800': { color: 'Azure' }
+        }
+
+
+        values.temperatura = 0
+        values.umidade_ar = 0
+        values.ponto_orvalho = 0
+        values.luminosidade = 0
+        values.umidade_solo = 0
+
+        $interval(function() {
+            $http.get(url)
+                .then(function(res) {
+                    values.temperatura = res.data.field1
+                    values.umidade_ar = res.data.field2
+                    values.ponto_orvalho = res.data.field3
+                    values.luminosidade = res.data.field5
+                    values.umidade_solo = res.data.field6
+                })
+        }, 5000)
+
+    })
 
 </script>
 <div ng-app='gauges'>
     <div id='chart_div'></div>
     <div ng-controller='MainController as main'>
         <ng-gauge size="130" type="arch" thick="10" 
-                  min="0" max="60" value="main.temperatura" 
-                  cap="round" label="Temperatura" append="&deg;C"
-                  foreground-color="#ffcc66" background-color="#EEE">
+                  min="0" max="60" value="main.temperatura" thresholds='main.tempThresholds'
+                  cap="round" label="Temperatura" append="&deg;C">
         </ng-gauge>
         <ng-gauge size="130" type="arch" thick="10" 
-                  min="0" max="100" value="main.umidade_ar" 
-                  cap="round" label="Umidade do Ar" append="%"
-                  foreground-color="#ffcc66" background-color="#EEE">
+                  min="0" max="100" value="main.umidade_ar" thresholds='main.umiThresholds'
+                  cap="round" label="Umidade do Ar" append="%">
         </ng-gauge>
         <ng-gauge size="130" type="arch" thick="10" 
                   min="0" max="60" value="main.ponto_orvalho" 
                   cap="round" label="Ponto de Orvalho" append="&deg;C"
-                  foreground-color="#ffcc66" background-color="#EEE">
+                  foreground-color="cyan" background-color="#EEE">
         </ng-gauge>
         <ng-gauge size="130" type="arch" thick="10" 
                   min="0" max="1024" value="main.luminosidade" 
                   cap="round" label="Luminosidade" append=""
-                  foreground-color="#ffcc66" background-color="#EEE">
+                  thresholds='main.lumiThresholds'>
         </ng-gauge>
         <ng-gauge size="130" type="arch" thick="10" 
                   min="0" max="1024" value="main.umidade_solo" 
