@@ -81,7 +81,7 @@ Uma vez instalado o programa, juntamente com as depencias de bibliotecas, basta 
 
 ### Modificações no ThinkSpeak
 
-Para adicionar um novo campo na API do ThinkSpeak basta acessar a url `https://thingspeak.com/channels/<id_canal>/edit` onde **<id_canal>** é o id do canal gerado na criação do  canal.
+Para adicionar um novo campo na API do ThinkSpeak basta acessar a url `https://thingspeak.com/channels/<id_canal>/edit` onde **<idCanal>** é o id do canal gerado na criação do  canal.
 
 Nesse momento basta apenas habilitar e nomear um dos 8 campos possíveis fornecidos pela API do ThinkSpeak.
 
